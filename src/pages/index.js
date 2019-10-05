@@ -6,15 +6,18 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to Jons React site.</p>
-    <p>Now let's build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+  <div>
+    <Layout>
+      <div className='Hero'>
+        <div className="HeroGroup">
+          <h1>Code With Jon</h1>
+          <p>Welcome to Jons React site.</p>
+          <p>Now let's build something great.</p>
+          <Link to="/page-2/">Go to page 2</Link>
+        </div>
+      </div>
+    </Layout>
+  </div>
+);
 
 export default IndexPage

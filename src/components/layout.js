@@ -27,6 +27,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
+        <header />
         <main>{children}</main>
         <footer>
           © Jonathan Fink {new Date().getFullYear()}, Built with

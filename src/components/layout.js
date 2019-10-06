@@ -29,11 +29,6 @@ const Layout = ({ children }) => {
       <div>
         <header />
         <main>{children}</main>
-        <footer>
-          © Jonathan Fink {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Love</a>
-        </footer>
       </div>
     </>
   )

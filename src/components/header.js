@@ -6,8 +6,8 @@ import './Header.css'
 const Header = ({ siteTitle }) => (
   <div className="Header">
     <div className="HeaderGroup">
-      <Link to="/courses">Projects</Link>
-      <Link to="/downloads">About Me</Link>
+      <Link smooth to="/#projects">Projects</Link>
+      <Link to="/aboutme">About Me</Link>
       <Link to="/"><img src={require('../images/logoJF.png')} width='30' background="white" /></Link>
       <Link to="/workshops">Youtube</Link>
       <Link to="/buy"><button>Contact</button></Link>

@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Link, navigate } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
@@ -14,7 +13,7 @@ const IndexPage = () => (
           <h1>Code With Jon</h1>
           <p>Where Concepts Become Creations.</p>
           <p>Now Let's Build Something Great.</p>
-          <Link to="/page-2/">Get To Know Me</Link>
+          <Link to="/aboutme/">Get To Know Me</Link>
           <div className="Logos">
               <img src={require("../images/logo-sketch.png")} width="50px" />
               <img src={require("../images/logo-figma.png")} width="50px" />
@@ -39,24 +38,35 @@ const IndexPage = () => (
         </div>
       </div>
     </Layout>
-    <div className="Cards">
-      <h2> 11 courses, more coming</h2>
-      <div className="CardGroup">
-            <Card title="React for Designers"
-            text="12 sections"
-            image={require("../images/wallpaper.jpg")}/>
-
+    <div className="Cards" id="projects">
+      <h2> Projects</h2>
+      <div className="CardGroup" >
+            <Card title="Steady Site"
+            text="React | Express | MongoDb | Node "
+            image={require("../images/wallpaper.jpg")
+            }
+           nav={'../steady'}
+            />
+          
             <Card title="Design Systems"
             text="10 sections"
-            image={require("../images/wallpaper2.jpg")}/>
+            image={require("../images/wallpaper2.jpg")}
+            nav={0}/>
 
-            <Card title="Sound Design"
-            text="5 sections"
-            image={require("../images/wallpaper3.jpg")}/>
+            <Card title="AirBLetB"
+            text="MongoDB | Express | Node"
+            image={require("../images/wallpaper3.jpg")}
+            nav={1}/>
 
-            <Card title="ARKit 2"
-            text="3 sections"
+            <Card title="Convene"
+            text="Python | Jdango | AWS"
             image={require("../images/wallpaper4.jpg")}/>
+
+            <Card title="Minesweeper"
+            text="Vanilla JS | CSS | HTML"
+            image={require("../images/wallpaper4.jpg")}
+            nav={'../minesweeper'}
+            />
       </div>
     </div>
     <footer>

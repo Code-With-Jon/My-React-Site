@@ -15,12 +15,12 @@ const IndexPage = () => (
           <p>Now Let's Build Something Great.</p>
           <Link to="/aboutme/">Get To Know Me</Link>
           <div className="Logos">
-              <img src={require("../images/logo-sketch.png")} width="50px" />
-              <img src={require("../images/logo-figma.png")} width="50px" />
-              <img src={require("../images/logo-studio.png")} width="50px" />
-              <img src={require("../images/logo-framer.png")} width="50px" />
-              <img src={require("../images/logo-react.png")} width="50px" />
-              <img src={require("../images/logo-swift.png")} width="50px" />
+              <img alt='' src={require("../images/logo-sketch.png")} width="50px" />
+              <img alt='' src={require("../images/logo-figma.png")} width="50px" />
+              <img alt='' src={require("../images/logo-studio.png")} width="50px" />
+              <img alt='' src={require("../images/logo-framer.png")} width="50px" />
+              <img alt='' src={require("../images/logo-react.png")} width="50px" />
+              <img alt='' src={require("../images/logo-swift.png")} width="50px" />
           </div>
           <svg width="100%" height="172" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill="white">
@@ -41,38 +41,50 @@ const IndexPage = () => (
     <div className="Cards" id="projects">
       <h2> Projects</h2>
       <div className="CardGroup" >
-            <Card title="Steady Site"
+            <Card title="Steady"
             text="React | Express | MongoDb | Node "
             image={require("../images/wallpaper.jpg")
             }
            nav={'../steady'}
             />
-          
-            <Card title="Design Systems"
-            text="10 sections"
-            image={require("../images/wallpaper2.jpg")}
-            nav={0}/>
 
             <Card title="AirBLetB"
             text="MongoDB | Express | Node"
             image={require("../images/wallpaper3.jpg")}
-            nav={1}/>
+            nav={'../airbletb'}/>
 
             <Card title="Convene"
             text="Python | Jdango | AWS"
-            image={require("../images/wallpaper4.jpg")}/>
+            image={require("../images/wallpaper4.jpg")}
+            nav={'../convene'}
+            />
 
             <Card title="Minesweeper"
             text="Vanilla JS | CSS | HTML"
             image={require("../images/wallpaper4.jpg")}
             nav={'../minesweeper'}
             />
+
+            <Card title="Train Cart"
+            text="Java"
+            image={require("../images/wallpaper2.jpg")}
+            nav={'../traincart'}/>
+
+            <Card title="Shortest Path Matrix"
+            text="Java"
+            image={require("../images/wallpaper2.jpg")}
+            nav={'../matrix'}/>
+
+            <Card title="Shopping Cart"
+            text="Java"
+            image={require("../images/wallpaper2.jpg")}
+            nav={'../shoppingCart'}/>
       </div>
     </div>
     <footer>
           © Jonathan Fink {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Love</a>
+          <a href="https://github.com/Code-With-Jon">Love</a>
         </footer>
   </div>
 );

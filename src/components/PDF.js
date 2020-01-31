@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Document, Page } from "react-pdf/dist/entry.webpack";
 import "react-pdf/dist/Page/AnnotationLayer.css";
-import resume from '../../public/Resume.pdf'
+import resume from '../images/Resume.pdf'
 export default class Resume extends Component {
   state = { numPages: null, pageNumber: 1 };
 

@@ -13,7 +13,7 @@ const ProjectDescription = props => (
           <h1>Contact</h1>
          
     <div style={{}}>
-          <p style={{textAlign: 'justify'}}> collegepulsemag@gmail.com </p>
+          <p style={{textAlign: 'center', marginTop: '4%'}}> collegepulsemag@gmail.com </p>
           </div>
           <div style={{paddingTop: '20px'}}>
         {/* <a style={{marginRight: '20px'}} href="https://github.com/Code-With-Jon/Steady-Site">GitHub</a>

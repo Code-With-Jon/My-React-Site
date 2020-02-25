@@ -7,7 +7,7 @@ const Header = ({ siteTitle, headerStyle }) => (
     <div className="HeaderGroup">
       <Link smooth to="/#projects">Projects</Link>
       <Link to="/aboutme">About Me</Link>
-      <Link to="/"><img src={require('../images/logoJF.png')} width='30' background="white" /></Link>
+      <Link to="/"><img alt='' src={require('../images/logoJF.png')} width='30' background="white" /></Link>
       <Link to="/awards">Awards</Link>
       <Link to="/contact"><button>Contact</button></Link>
     </div>

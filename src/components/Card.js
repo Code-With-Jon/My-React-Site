@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.css'
-import { Link, navigate } from "gatsby"
+import {navigate } from "gatsby"
 
 
 const Card = props => (

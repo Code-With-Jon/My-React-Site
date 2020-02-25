@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/header'
 import Layout from '../components/layout'
 import {Link} from 'gatsby'
-import resume from '../Resume.pdf'
+import resume from '../images/Resume.pdf'
 
 export default class AboutMe extends React.Component{
 

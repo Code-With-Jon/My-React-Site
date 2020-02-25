@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
 import Layout from '../components/layout';
-import { Link, navigate } from "gatsby"
 
 const ProjectDescription = props => (
     <div >
